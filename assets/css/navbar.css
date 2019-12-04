@@ -1,0 +1,117 @@
+
+/* Navigation-Bar
+----------------------------------------------------------*/
+.navbar-inverse{
+    border-radius: 0%;
+    border: none;
+    padding-bottom: 15px;
+    background-color: #F3BD32;
+    height: 70px;
+    font-size: 1.2em;
+
+}
+
+.navbar-inverse .navbar-header{
+    height: 70px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    margin: 0 15px 0 0 !important;
+}
+
+.navbar-inverse .navbar-toggle i{
+    font-size: 24px;
+    color: var(--primary-color-dark);
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: .9em;
+    color: #0F2535;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: var(--primary-color-dark);
+}
+
+
+/* Side Nav
+----------------------------------------------------------*/
+#side-nav {
+    position: fixed;
+    z-index: 1100;
+    bottom: 0;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0,0,0, .75);
+    overflow-y: auto;
+    -webkit-overflow-y: auto;
+    transition: all 300ms;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+#side-nav img{
+    width: 30%;
+    margin-top: 30px;
+}
+
+#side-nav ul{
+    margin: 50px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+
+#side-nav ul li{
+    line-height: 3;
+    border-bottom: 1px dashed var(--primary-color-dark);
+}
+
+#side-nav ul li:last-child{
+    border: none;
+}
+
+#side-nav ul li a{
+    color: white;
+}
+
+#side-nav-mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: var(--overllay);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+#side-nav-mask.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
